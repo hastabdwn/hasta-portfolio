@@ -13,11 +13,11 @@ export default function Navbar() {
         setIsMobileMenuOpen(!isMobileMenuOpen)
     }
     return (
-        <header className='flex items-center justify-between text-black dark:text-white dark:bg-[#3c3c3c] bg-white p-2 fixed left-0 right-0 top-0 z-50'>
+        <header className='flex items-center justify-between text-black dark:text-white dark:bg-[#282828] bg-white p-2 fixed left-0 right-0 top-0 z-50'>
             <nav className='w-full max-w-5xl flex items-center justify-between mx-auto'>
                 {/* Logo & Desktop Menu */}
                 <div className='flex items-center space-x-2'>
-                    <Link href="/" className='text-lg font-bold'>H</Link>
+                    <Link href="/" className='text-lg font-bold'>Hasta</Link>
                     <div className='hidden md:flex items-center space-x-2'>
                         {menu.map((item) => (
                             <Link
@@ -34,7 +34,7 @@ export default function Navbar() {
                 <div className='flex items-center space-x-2'>
                     <ThemeToggle />
                     <button
-                        className='md:hidden bg-white dark:bg-[#3c3c3c] text-black pointers flex items-center'
+                        className='md:hidden bg-white dark:bg-[#282828] text-black pointers flex items-center'
                         onClick={toggleMobileMenu}
                         type="button"
                         aria-label="Open mobile menu"
