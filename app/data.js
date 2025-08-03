@@ -49,11 +49,11 @@ export const contact = [
   {
     id: 2,
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/hasta-budiawan-9b1a4b1b6/"
+    href: "https://www.linkedin.com/in/hastabudiawan/"
   },
   {
     id: 3,
     name: "GitHub",
-    href: "https://github.com/hasta-budiawan"
+    href: "https://github.com/hastabdwn"
   }
 ]
