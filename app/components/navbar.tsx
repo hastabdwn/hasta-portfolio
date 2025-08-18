@@ -23,7 +23,7 @@ export default function Navbar() {
                             <Link
                                 key={item.id}
                                 href={item.href}
-                                className={`px-1 hover:underline decoration-wavy ${pathname === item.href ? 'underline decoration-wavy' : ''}`}
+                                className={`px-1 hover:underline ${pathname === item.href ? 'underline' : ''}`}
                             >
                                 {item.name}
                             </Link>
@@ -44,13 +44,13 @@ export default function Navbar() {
                 </div>
                 {/* Mobile Menu */}
                 {isMobileMenuOpen && (
-                    <div className="md:hidden m-[10px] dark:bg-[#3c3c3c] text-black dark:text-white z-10 absolute top-14 left-0 right-0 bg-white p-1 rounded-xl transition-all border border-gray-500 dark:border-gray-100">
+                    <div className="md:hidden m-[10px] dark:bg-[#3c3c3c] text-black dark:text-white z-10 absolute top-14 left-0 right-0 bg-white p-1 rounded-xl transition-all border border-gray-500 dark:border-none">
                         <div className='flex flex-col p-4 text-center'>
                             {menu.map((item) => (
                                 <Link
                                     key={item.id}
                                     href={item.href}
-                                    className={`block py-2 px-2 hover:underline decoration-wavy dark:text-white ${pathname === item.href ? 'underline decoration-wavy' : ''}`}
+                                    className={`block py-2 px-2 hover:underline dark:text-white ${pathname === item.href ? 'underline' : ''}`}
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     {item.name}

@@ -1,4 +1,4 @@
-import { aboutMe, skillsFrontend, skillsDataAnalyst, contact } from '../data.js'
+import { aboutMe, interests, techStack, contact } from '../data.js'
 
 export default function About() {
   return (
@@ -10,18 +10,21 @@ export default function About() {
           <p key={index} className="text-black dark:text-white text-left">{item.description}</p>
         ))}
 
-        {/* Skills */}
+        {/* Interests */}
         <div className="space-y-4">
-          <h2 className="text-xl font-semibold mb-2">Skills</h2>
-          <p className="text-black dark:text-white text-left">Frontend Developer</p>
+          <h2 className="text-xl font-semibold mb-2">Interests</h2>
           <div className="flex flex-wrap gap-2">
-            {skillsFrontend.map((skill) => (
-              <p key={skill.id} className="px-3 py-1 text-white bg-[#ff4040] dark:bg-[#3c3c3c] rounded-full">{skill.name}</p>
+            {interests.map((interest) => (
+              <p key={interest.id} className="px-3 py-1 text-white bg-[#ff4040] dark:bg-[#3c3c3c] rounded-full">{interest.name}</p>
             ))}
           </div>
-          <p className="text-black dark:text-white text-left">Data Analyst</p>
+        </div>
+
+        {/* Tech Stack */}
+        <div className="space-y-4">
+          <h2 className="text-xl font-semibold mb-2">Tech Stack</h2>
           <div className="flex flex-wrap gap-2">
-            {skillsDataAnalyst.map((skill) => (
+            {techStack.map((skill) => (
               <p key={skill.id} className="px-3 py-1 text-white bg-[#ff4040] dark:bg-[#3c3c3c] rounded-full">{skill.name}</p>
             ))}
           </div>
@@ -38,6 +41,7 @@ export default function About() {
             ))}
           </div>
         </div>
+        
       </div>
     </div>
   )

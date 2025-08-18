@@ -13,30 +13,41 @@ export const aboutMe = [
   },
 ]
 
-// skills frontend
-export const skillsFrontend = [
-  { id: 1, name: "JavaScript" },
-  { id: 2, name: "React" },
-  { id: 3, name: "Next.js" },
-  { id: 4, name: "Tailwind CSS" },
-  { id: 5, name: "Git" },
+// interests
+export const interests = [
+  { id: 1, name: "Data Analysis" },
+  { id: 2, name: "Frontend Developer" },
 ]
 
-// skills data analyst
-export const skillsDataAnalyst = [
-  { id: 1, name: "Python" },
-  { id: 2, name: "R" },
-  { id: 3, name: "NumPy" },
-  { id: 4, name: "Pandas" },
-  { id: 5, name: "SQL" },
-  { id: 6, name: "Power BI" },
-  { id: 7, name: "Tableau" },
-  { id: 8, name: "Looker Studio" },
-  { id: 9, name: "Microsoft Excel" },
-  { id: 10, name: "Google Data Studio" },
-  { id: 11, name: "Google Sheets" },
-  { id: 12, name: "Data Cleaning" },
-  { id: 13, name: "ETL" },
+// tech stack
+export const techStack = [
+  { id: 1, name: "Next.js" },
+  { id: 2, name: "React" },
+  { id: 3, name: "TypeScript" },
+  { id: 4, name: "Tailwind CSS" },
+  { id: 5, name: "GIT" },
+  { id: 6, name: "Python" },
+  { id: 7, name: "R" },
+  { id: 8, name: "NumPy" },
+  { id: 9, name: "Pandas" },
+  { id: 10, name: "SQL" },
+  { id: 11, name: "Power BI" },
+  { id: 12, name: "Tableau" },
+  { id: 13, name: "Looker Studio" },
+  { id: 14, name: "Microsoft Excel" },
+  { id: 15, name: "Google Data Studio" },
+  { id: 16, name: "Google Sheets" },
+  { id: 17, name: "Data Cleaning" },
+  { id: 18, name: "ETL" },
+]
+
+// portfolio
+export const portfolio = [
+  { id: 1, 
+    title: "Portfolio Website",
+    description: "My personal portfolio website showcasing my projects and skills.",
+    view: "https://hasta-portfolio.vercel.app/"
+  },
 ]
 
 // contact
