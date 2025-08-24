@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       <div className="min-h-dvh p-2 flex justify-center items-center">
-        <div className="py-16 space-y-4 w-full max-w-5xl">
+        <div className="py-16 space-y-4 w-full max-w-5xl text-center">
           <h1 className="text-2xl font-semibold mb-2">Hi, I&#39;m Hasta.</h1>
           <h1 className="text-2xl font-semibold mb-2">Frontend Developer & Data Analyst</h1>
           <p className="text-gray-600 dark:text-white">I design and develop web applications that merge intuitive interfaces with data-driven functionality, delivering solutions that are both user-friendly and high-performing.</p>
