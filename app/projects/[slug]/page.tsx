@@ -13,6 +13,8 @@ import {
 } from "@/sanity/lib/queries";
 import { urlFor } from "@/sanity/lib/image";
 
+export const revalidate = 60; // Revalidate every 60 seconds for ISR (Incremental Static Regeneration)
+
 type Props = {
   params: Promise<{ slug: string }>;
 };

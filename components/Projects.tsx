@@ -6,6 +6,8 @@ import { ArrowUpRight } from "lucide-react";
 import { getAllProjects } from "@/sanity/lib/queries";
 import { urlFor } from "@/sanity/lib/image";
 
+export const revalidate = 60; // Revalidate every 60 seconds for ISR (Incremental Static Regeneration)
+
 export default async function Projects() {
   const projectsData = await getAllProjects();
 
